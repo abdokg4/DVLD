@@ -59,7 +59,7 @@ namespace WindowsFormsApp1
             this.nightLabel3 = new ReaLTaiizor.Controls.NightLabel();
             this.moonLabel2 = new ReaLTaiizor.Controls.MoonLabel();
             this.nightLabel2 = new ReaLTaiizor.Controls.NightLabel();
-            this.moonLabel1 = new ReaLTaiizor.Controls.MoonLabel();
+            this.lblName = new ReaLTaiizor.Controls.MoonLabel();
             this.nightLabel1 = new ReaLTaiizor.Controls.NightLabel();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
@@ -178,7 +178,7 @@ namespace WindowsFormsApp1
             this.tabPage1.Controls.Add(this.nightLabel3);
             this.tabPage1.Controls.Add(this.moonLabel2);
             this.tabPage1.Controls.Add(this.nightLabel2);
-            this.tabPage1.Controls.Add(this.moonLabel1);
+            this.tabPage1.Controls.Add(this.lblName);
             this.tabPage1.Controls.Add(this.nightLabel1);
             this.tabPage1.Location = new System.Drawing.Point(0, 25);
             this.tabPage1.Name = "tabPage1";
@@ -617,17 +617,18 @@ namespace WindowsFormsApp1
             this.nightLabel2.TabIndex = 28;
             this.nightLabel2.Text = "License Created:";
             // 
-            // moonLabel1
+            // lblName
             // 
-            this.moonLabel1.AutoSize = true;
-            this.moonLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.moonLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.moonLabel1.ForeColor = System.Drawing.Color.Teal;
-            this.moonLabel1.Location = new System.Drawing.Point(128, 3);
-            this.moonLabel1.Name = "moonLabel1";
-            this.moonLabel1.Size = new System.Drawing.Size(115, 20);
-            this.moonLabel1.TabIndex = 27;
-            this.moonLabel1.Text = "Abdelrahman";
+            this.lblName.AutoSize = true;
+            this.lblName.BackColor = System.Drawing.Color.Transparent;
+            this.lblName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblName.ForeColor = System.Drawing.Color.Teal;
+            this.lblName.Location = new System.Drawing.Point(128, 3);
+            this.lblName.Name = "lblName";
+            this.lblName.Size = new System.Drawing.Size(115, 20);
+            this.lblName.TabIndex = 27;
+            this.lblName.Text = "Abdelrahman";
+            this.lblName.Click += new System.EventHandler(this.moonLabel1_Click);
             // 
             // nightLabel1
             // 
@@ -940,7 +941,7 @@ namespace WindowsFormsApp1
         private ReaLTaiizor.Controls.NightLabel nightLabel3;
         private ReaLTaiizor.Controls.MoonLabel moonLabel2;
         private ReaLTaiizor.Controls.NightLabel nightLabel2;
-        private ReaLTaiizor.Controls.MoonLabel moonLabel1;
+        private ReaLTaiizor.Controls.MoonLabel lblName;
         private ReaLTaiizor.Controls.NightLabel nightLabel1;
         private System.Windows.Forms.TabPage tabPage2;
         private ReaLTaiizor.Controls.FoxBigLabel foxBigLabel1;

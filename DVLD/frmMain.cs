@@ -162,7 +162,12 @@ namespace WindowsFormsApp1
 
         private void frmMain_Load(object sender, EventArgs e)
         {
-            clsDataAccessSettings.TestConnection();
+            lblName.Text = clsPerson.Find(clsGlobalUser.CurrentUser.PersonID).FirstName;
+        }
+
+        private void moonLabel1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
