@@ -43,6 +43,8 @@ namespace WindowsFormsApp1
             this.txtUserName = new ReaLTaiizor.Controls.HopeTextBox();
             this.panel1 = new ReaLTaiizor.Controls.Panel();
             this.hopePictureBox1 = new ReaLTaiizor.Controls.HopePictureBox();
+            this.foreverLabel1 = new ReaLTaiizor.Controls.ForeverLabel();
+            this.foreverLabel2 = new ReaLTaiizor.Controls.ForeverLabel();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.hopePictureBox1)).BeginInit();
@@ -51,6 +53,8 @@ namespace WindowsFormsApp1
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(12)))), ((int)(((byte)(45)))));
+            this.panel2.Controls.Add(this.foreverLabel2);
+            this.panel2.Controls.Add(this.foreverLabel1);
             this.panel2.Controls.Add(this.bigLabel1);
             this.panel2.Controls.Add(this.btnLogin);
             this.panel2.Controls.Add(this.chkRememberMe);
@@ -329,6 +333,30 @@ namespace WindowsFormsApp1
             this.hopePictureBox1.TabStop = false;
             this.hopePictureBox1.TextRenderingType = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
             // 
+            // foreverLabel1
+            // 
+            this.foreverLabel1.AutoSize = true;
+            this.foreverLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.foreverLabel1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.foreverLabel1.ForeColor = System.Drawing.Color.LightGray;
+            this.foreverLabel1.Location = new System.Drawing.Point(8, 343);
+            this.foreverLabel1.Name = "foreverLabel1";
+            this.foreverLabel1.Size = new System.Drawing.Size(167, 25);
+            this.foreverLabel1.TabIndex = 27;
+            this.foreverLabel1.Text = "UserName: Demo";
+            // 
+            // foreverLabel2
+            // 
+            this.foreverLabel2.AutoSize = true;
+            this.foreverLabel2.BackColor = System.Drawing.Color.Transparent;
+            this.foreverLabel2.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.foreverLabel2.ForeColor = System.Drawing.Color.LightGray;
+            this.foreverLabel2.Location = new System.Drawing.Point(8, 379);
+            this.foreverLabel2.Name = "foreverLabel2";
+            this.foreverLabel2.Size = new System.Drawing.Size(158, 25);
+            this.foreverLabel2.TabIndex = 28;
+            this.foreverLabel2.Text = "Password: demo";
+            // 
             // frmLoginScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
@@ -367,5 +395,7 @@ namespace WindowsFormsApp1
         private ReaLTaiizor.Controls.ForeverToggle chkRememberMe;
         private ReaLTaiizor.Controls.CyberButton btnLogin;
         private ReaLTaiizor.Controls.BigLabel bigLabel1;
+        private ReaLTaiizor.Controls.ForeverLabel foreverLabel2;
+        private ReaLTaiizor.Controls.ForeverLabel foreverLabel1;
     }
 }

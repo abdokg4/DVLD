@@ -277,7 +277,9 @@ namespace DVLD_DataAccess
 
                 rowsAffected = command.ExecuteNonQuery();
             }
-            catch (Exception ex){clsLogger.Log(ex);}
+            catch (Exception ex){clsLogger.Log(ex);
+                throw;            
+            }
             finally
             {
                 connection.Close();

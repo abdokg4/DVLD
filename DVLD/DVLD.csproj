@@ -97,6 +97,12 @@
     <Compile Include="Application\Local Driving License\ctrlApplicationInfo.Designer.cs">
       <DependentUpon>ctrlApplicationInfo.cs</DependentUpon>
     </Compile>
+    <Compile Include="Application\frmLicenseApps.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Application\frmLicenseApps.Designer.cs">
+      <DependentUpon>frmLicenseApps.cs</DependentUpon>
+    </Compile>
     <Compile Include="Licenses\Detain Licenses\frmFines.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -362,6 +368,9 @@
     <EmbeddedResource Include="Application\Local Driving License\ctrlApplicationInfo.resx">
       <DependentUpon>ctrlApplicationInfo.cs</DependentUpon>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Application\frmLicenseApps.resx">
+      <DependentUpon>frmLicenseApps.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Licenses\Detain Licenses\frmFines.resx">
       <DependentUpon>frmFines.cs</DependentUpon>

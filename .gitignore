@@ -27,13 +27,12 @@ x86/
 [Oo]bj/
 [Ll]og/
 
-NuGet Packages
-
+# NuGet Packages
 *.nupkg
 *.snupkg
 #packages/
-*.nuget.props
-*.nuget.targets
+#*.nuget.props
+#*.nuget.targets
 
 ReSharper
 

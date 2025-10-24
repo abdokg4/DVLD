@@ -35,7 +35,7 @@ namespace WindowsFormsApp1
             this.TOPPL = new System.Windows.Forms.Panel();
             this.hopeTabPage1 = new ReaLTaiizor.Controls.HopeTabPage();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pbPersonImage = new System.Windows.Forms.PictureBox();
             this.MIDPL = new System.Windows.Forms.Panel();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
@@ -55,9 +55,9 @@ namespace WindowsFormsApp1
             this.btnApplication = new ReaLTaiizor.Controls.MetroTile();
             this.moonLabel5 = new ReaLTaiizor.Controls.MoonLabel();
             this.nightLabel5 = new ReaLTaiizor.Controls.NightLabel();
-            this.moonLabel3 = new ReaLTaiizor.Controls.MoonLabel();
+            this.lblLicenseExpire = new ReaLTaiizor.Controls.MoonLabel();
             this.nightLabel3 = new ReaLTaiizor.Controls.NightLabel();
-            this.moonLabel2 = new ReaLTaiizor.Controls.MoonLabel();
+            this.lblLicenseCreate = new ReaLTaiizor.Controls.MoonLabel();
             this.nightLabel2 = new ReaLTaiizor.Controls.NightLabel();
             this.lblName = new ReaLTaiizor.Controls.MoonLabel();
             this.nightLabel1 = new ReaLTaiizor.Controls.NightLabel();
@@ -81,7 +81,7 @@ namespace WindowsFormsApp1
             this.TOPPL.SuspendLayout();
             this.hopeTabPage1.SuspendLayout();
             this.tabPage1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbPersonImage)).BeginInit();
             this.MIDPL.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
@@ -170,13 +170,13 @@ namespace WindowsFormsApp1
             // 
             // tabPage1
             // 
-            this.tabPage1.Controls.Add(this.pictureBox1);
+            this.tabPage1.Controls.Add(this.pbPersonImage);
             this.tabPage1.Controls.Add(this.MIDPL);
             this.tabPage1.Controls.Add(this.moonLabel5);
             this.tabPage1.Controls.Add(this.nightLabel5);
-            this.tabPage1.Controls.Add(this.moonLabel3);
+            this.tabPage1.Controls.Add(this.lblLicenseExpire);
             this.tabPage1.Controls.Add(this.nightLabel3);
-            this.tabPage1.Controls.Add(this.moonLabel2);
+            this.tabPage1.Controls.Add(this.lblLicenseCreate);
             this.tabPage1.Controls.Add(this.nightLabel2);
             this.tabPage1.Controls.Add(this.lblName);
             this.tabPage1.Controls.Add(this.nightLabel1);
@@ -188,15 +188,16 @@ namespace WindowsFormsApp1
             this.tabPage1.Text = "My Profile";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
-            // pictureBox1
+            // pbPersonImage
             // 
-            this.pictureBox1.Image = global::WindowsFormsApp1.Properties.Resources.Male_512;
-            this.pictureBox1.Location = new System.Drawing.Point(613, 4);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(147, 140);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 13;
-            this.pictureBox1.TabStop = false;
+            this.pbPersonImage.Image = global::WindowsFormsApp1.Properties.Resources.Male_512;
+            this.pbPersonImage.Location = new System.Drawing.Point(610, 3);
+            this.pbPersonImage.Name = "pbPersonImage";
+            this.pbPersonImage.Size = new System.Drawing.Size(147, 140);
+            this.pbPersonImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbPersonImage.TabIndex = 13;
+            this.pbPersonImage.TabStop = false;
+            this.pbPersonImage.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // MIDPL
             // 
@@ -569,17 +570,17 @@ namespace WindowsFormsApp1
             this.nightLabel5.TabIndex = 34;
             this.nightLabel5.Text = "User Type:";
             // 
-            // moonLabel3
+            // lblLicenseExpire
             // 
-            this.moonLabel3.AutoSize = true;
-            this.moonLabel3.BackColor = System.Drawing.Color.Transparent;
-            this.moonLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.moonLabel3.ForeColor = System.Drawing.Color.Teal;
-            this.moonLabel3.Location = new System.Drawing.Point(124, 67);
-            this.moonLabel3.Name = "moonLabel3";
-            this.moonLabel3.Size = new System.Drawing.Size(89, 20);
-            this.moonLabel3.TabIndex = 31;
-            this.moonLabel3.Text = "15/6/2031";
+            this.lblLicenseExpire.AutoSize = true;
+            this.lblLicenseExpire.BackColor = System.Drawing.Color.Transparent;
+            this.lblLicenseExpire.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLicenseExpire.ForeColor = System.Drawing.Color.Teal;
+            this.lblLicenseExpire.Location = new System.Drawing.Point(124, 67);
+            this.lblLicenseExpire.Name = "lblLicenseExpire";
+            this.lblLicenseExpire.Size = new System.Drawing.Size(89, 20);
+            this.lblLicenseExpire.TabIndex = 31;
+            this.lblLicenseExpire.Text = "15/6/2031";
             // 
             // nightLabel3
             // 
@@ -593,17 +594,17 @@ namespace WindowsFormsApp1
             this.nightLabel3.TabIndex = 30;
             this.nightLabel3.Text = "License Expires:";
             // 
-            // moonLabel2
+            // lblLicenseCreate
             // 
-            this.moonLabel2.AutoSize = true;
-            this.moonLabel2.BackColor = System.Drawing.Color.Transparent;
-            this.moonLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.moonLabel2.ForeColor = System.Drawing.Color.Teal;
-            this.moonLabel2.Location = new System.Drawing.Point(124, 31);
-            this.moonLabel2.Name = "moonLabel2";
-            this.moonLabel2.Size = new System.Drawing.Size(89, 20);
-            this.moonLabel2.TabIndex = 29;
-            this.moonLabel2.Text = "15/6/2025";
+            this.lblLicenseCreate.AutoSize = true;
+            this.lblLicenseCreate.BackColor = System.Drawing.Color.Transparent;
+            this.lblLicenseCreate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLicenseCreate.ForeColor = System.Drawing.Color.Teal;
+            this.lblLicenseCreate.Location = new System.Drawing.Point(124, 31);
+            this.lblLicenseCreate.Name = "lblLicenseCreate";
+            this.lblLicenseCreate.Size = new System.Drawing.Size(89, 20);
+            this.lblLicenseCreate.TabIndex = 29;
+            this.lblLicenseCreate.Text = "15/6/2025";
             // 
             // nightLabel2
             // 
@@ -908,7 +909,7 @@ namespace WindowsFormsApp1
             this.hopeTabPage1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbPersonImage)).EndInit();
             this.MIDPL.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
@@ -937,9 +938,9 @@ namespace WindowsFormsApp1
         private System.Windows.Forms.Panel MIDPL;
         private ReaLTaiizor.Controls.MoonLabel moonLabel5;
         private ReaLTaiizor.Controls.NightLabel nightLabel5;
-        private ReaLTaiizor.Controls.MoonLabel moonLabel3;
+        private ReaLTaiizor.Controls.MoonLabel lblLicenseExpire;
         private ReaLTaiizor.Controls.NightLabel nightLabel3;
-        private ReaLTaiizor.Controls.MoonLabel moonLabel2;
+        private ReaLTaiizor.Controls.MoonLabel lblLicenseCreate;
         private ReaLTaiizor.Controls.NightLabel nightLabel2;
         private ReaLTaiizor.Controls.MoonLabel lblName;
         private ReaLTaiizor.Controls.NightLabel nightLabel1;
@@ -950,7 +951,7 @@ namespace WindowsFormsApp1
         private ReaLTaiizor.Controls.AirSeparator BOTSR;
         private ReaLTaiizor.Controls.AirSeparator TOPSR;
         private System.Windows.Forms.Panel FILLPL;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pbPersonImage;
         private ReaLTaiizor.Controls.MoonLabel moonLabel7;
         private ReaLTaiizor.Controls.NightLabel nightLabel7;
         private ReaLTaiizor.Controls.MoonLabel moonLabel6;

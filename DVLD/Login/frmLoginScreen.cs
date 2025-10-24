@@ -78,6 +78,7 @@ namespace WindowsFormsApp1
             }
             else
                 chkRememberMe.Checked = false;
+
         }
 
         private void nightControlBox1_Click(object sender, EventArgs e)
