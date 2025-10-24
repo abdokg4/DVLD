@@ -4,8 +4,8 @@ This is a C# Windows Forms desktop application built to manage a driving and veh
 
 This project was migrated from a SQL Server database to a portable SQLite database to make it a self-contained, shareable application.
 
-![Screenshot of the DVLD login screen](URL-to-your-screenshot-goes-here)
-![Screenshot of the DVLD main dashboard](URL-to-your-screenshot-goes-here)
+![Screenshot of the DVLD login screen](<img width="776" height="423" alt="image" src="https://github.com/user-attachments/assets/de138d04-0d3d-4ccd-80c4-0afedf3a0304" />)
+![Screenshot of the DVLD main dashboard](<img width="769" height="547" alt="image" src="https://github.com/user-attachments/assets/238eef12-1b09-499f-b777-be58d09fbdf0" />)
 
 ## Features
 
